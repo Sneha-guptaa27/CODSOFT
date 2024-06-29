@@ -1,0 +1,251 @@
+.typewriter-text {
+    overflow: hidden; /* Ensures text is not visible outside its container */
+    white-space: nowrap; /* Ensures text stays on one line */
+    animation: typewriter 5s steps(50, end); /* Animation duration and steps */
+    border-right: .1em solid white; /* Cursor style effect */
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:beige;
+    color: hotpink;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family:Pacifico;
+    margin: 0;
+    font-size: 5.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.nav:hover{
+    background-color:hotpink;
+
+}
+
+
+.hero {
+    
+    background: url('images/supreme-pizza.jpg.webp') no-repeat center center/cover;
+    color:black;
+    text-align: center;
+    padding: 5rem 0;
+    
+}
+
+.text{
+    background-color:beige;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    background-color: #e63946;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.services {
+    background-color:beige;
+    padding: 2rem 0;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.pizza-gallery {
+    padding: 2rem 0;
+    background-color:pink;
+}
+
+.pizza-gallery .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pizza-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pizza-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    row-gap: 50px;
+}
+
+.pizza-item {
+    
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pizza-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.pizza-item:hover img{
+    transition: 0.3s;
+    transform: scale(1.06);
+}
+
+.pizza-item p {
+    margin-left: 60px;
+    opacity: 0;
+    position: absolute;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color:black;
+}
+.pizza-item:hover p{
+    opacity: 1;
+    transition: 0.2s;
+    font-size: 2rem;
+    font-family:italic serif;
+    transform: scale(1.03);
+    font: bolder;
+}
+
+
+footer {
+    background-color:beige;
+    color: black;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    flex: 1;
+    min-width: 250px;
+    margin: 0.5rem;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social ul li {
+    margin-right: 1rem;
+}
+
+.social ul li a {
+    color: pink;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
